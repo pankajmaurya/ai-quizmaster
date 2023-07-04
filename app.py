@@ -2,110 +2,17 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-# Quiz data
-questions = [
-  {
-    "question": "What is the purpose of the Stream API introduced in Java 8?",
-    "options": {
-      "a": "To provide a way to perform multi-threaded computations.",
-      "b": "To enable functional-style operations on sequences of elements.",
-      "c": "To create and manage threads in a more efficient way.",
-      "d": "To enable non-blocking I/O operations."
-    },
-    "answer": "b"
-  },
-  {
-    "question": "What are lambda expressions in Java 8?",
-    "options": {
-      "a": "A way to define multiple constructors for a class.",
-      "b": "A concise representation of an anonymous function that can be passed around and executed.",
-      "c": "A way to create instances of functional interfaces.",
-      "d": "A type of interface that has only one abstract method."
-    },
-    "answer": "b"
-  },
-  {
-    "question": "In Java 8, what interface should a functional interface extend to indicate that it is a functional interface?",
-    "options": {
-      "a": "Runnable",
-      "b": "Callable",
-      "c": "Functional",
-      "d": "FunctionalInterface"
-    },
-    "answer": "d"
-  },
-  {
-    "question": "Which of the following functional interfaces represents a function that takes two arguments and returns a result?",
-    "options": {
-      "a": "Supplier",
-      "b": "Consumer",
-      "c": "Predicate",
-      "d": "BiFunction"
-    },
-    "answer": "d"
-  },
-  {
-    "question": "What is the purpose of the Collector interface in Java 8's Stream API?",
-    "options": {
-      "a": "To filter elements in a stream.",
-      "b": "To map elements to another type.",
-      "c": "To reduce the elements of a stream to a single value.",
-      "d": "To perform mutable reduction operations on a stream."
-    },
-    "answer": "d"
-  },
-  {
-    "question": "What does the Optional class in Java 8 represent?",
-    "options": {
-      "a": "A wrapper for a nullable value.",
-      "b": "An alternative to the null value.",
-      "c": "A way to handle exceptions in functional programming.",
-      "d": "A utility class for mathematical operations."
-    },
-    "answer": "a"
-  },
-  {
-    "question": "In Java 8, what is the difference between parallel and sequential streams?",
-    "options": {
-      "a": "Parallel streams are executed on multiple threads, while sequential streams are executed on a single thread.",
-      "b": "Parallel streams are more efficient for small datasets, while sequential streams are better for large datasets.",
-      "c": "Sequential streams are executed on multiple threads, while parallel streams are executed on a single thread.",
-      "d": "There is no difference; they are two different names for the same concept."
-    },
-    "answer": "a"
-  },
-  {
-    "question": "What is a method reference in Java 8?",
-    "options": {
-      "a": "A reference to a private method in a class.",
-      "b": "A reference to an instance of a functional interface.",
-      "c": "A shorthand notation for writing lambda expressions for certain cases.",
-      "d": "A reference to a method that takes no arguments and returns void."
-    },
-    "answer": "c"
-  },
-  {
-    "question": "What is the purpose of the java.util.function package in Java 8?",
-    "options": {
-      "a": "To provide utility methods for handling collections.",
-      "b": "To enable functional programming by defining functional interfaces.",
-      "c": "To implement the Observer pattern.",
-      "d": "To handle I/O operations in a functional way."
-    },
-    "answer": "b"
-  },
-  {
-    "question": "What is the main benefit of using the CompletableFuture class in Java 8 for asynchronous programming?",
-    "options": {
-      "a": "It allows you to create and manage threads directly.",
-      "b": "It enables you to define complex synchronous operations.",
-      "c": "It provides a clean and easy-to-use API for managing asynchronous computations.",
-      "d": "It allows you to perform parallel processing without using streams."
-    },
-    "answer": "c"
-  }
-]
- 
+import json
+
+def read_json_file(file_path):
+    with open(file_path, 'r') as file:
+        json_data = json.load(file)
+        return json_data
+
+# Example usage
+file_path = 'file.json'
+questions = read_json_file(file_path)
+
 @app.context_processor
 def inject_enumerate():
     return dict(enumerate=enumerate)
