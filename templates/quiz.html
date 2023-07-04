@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+</head>
+<body>
+    <h1>Multiple Choice Quiz</h1>
+    <form method="POST" action="/">
+        {% for i, question in enumerate(questions) %}
+        <h3>{{ question.question }}</h3>
+        {% for j, choice in question.options.items() %}
+        <input type="radio" id="{{ i }}" name="{{ i }}" value="{{ j }}">
+        <label for="{{ i }}">{{ choice }}</label><br>
+        {% endfor %}
+        <br>
+        {% endfor %}
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
