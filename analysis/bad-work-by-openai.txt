@@ -1,0 +1,383 @@
+{
+  "quiz": [
+    {
+      "question": "What is the main benefit of using the CompletableFuture class in Java 8 for asynchronous programming?",
+      "options": {
+        "a": "It allows you to create and manage threads directly.",
+        "b": "It enables you to define complex synchronous operations.",
+        "c": "It provides a clean and easy-to-use API for managing asynchronous computations.",
+        "d": "It allows you to perform parallel processing without using streams."
+      },
+      "answer": "c"
+    },
+    {
+      "question": "What is a lambda expression in Java 8?",
+      "options": {
+        "a": "A way to define a method in an interface.",
+        "b": "A way to define a method in a class.",
+        "c": "A way to define a method without a name.",
+        "d": "A way to define a method with multiple parameters."
+      },
+      "answer": "c"
+    },
+    {
+      "question": "What is a functional interface in Java 8?",
+      "options": {
+        "a": "An interface that has only one abstract method.",
+        "b": "An interface that has multiple abstract methods.",
+        "c": "An interface that has no abstract methods.",
+        "d": "An interface that has both abstract and default methods."
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What is the purpose of the Stream API in Java 8?",
+      "options": {
+        "a": "To perform input and output operations.",
+        "b": "To manipulate collections of data.",
+        "c": "To create and manage threads.",
+        "d": "To define complex synchronous operations."
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is the difference between a parallel stream and a sequential stream in Java 8?",
+      "options": {
+        "a": "A parallel stream processes elements in parallel, while a sequential stream processes elements sequentially.",
+        "b": "A parallel stream processes elements sequentially, while a sequential stream processes elements in parallel.",
+        "c": "A parallel stream processes elements in random order, while a sequential stream processes elements in a specific order.",
+        "d": "A parallel stream processes elements in a specific order, while a sequential stream processes elements in random order."
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What is the purpose of the Optional class in Java 8?",
+      "options": {
+        "a": "To handle null values.",
+        "b": "To handle exceptions.",
+        "c": "To handle input and output operations.",
+        "d": "To handle multithreading."
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What is the difference between a checked exception and an unchecked exception in Java 8?",
+      "options": {
+        "a": "A checked exception must be declared in a method or caught, while an unchecked exception does not need to be declared or caught.",
+        "b": "A checked exception must be declared or caught, while an unchecked exception does not need to be declared or caught.",
+        "c": "A checked exception is thrown by the JVM, while an unchecked exception is thrown by the programmer.",
+        "d": "A checked exception is thrown by the programmer, while an unchecked exception is thrown by the JVM."
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What is the purpose of the Supplier functional interface in Java 8?",
+      "options": {
+        "a": "To represent a function that takes two arguments and returns a result.",
+        "b": "To represent a function that takes no arguments and returns a result.",
+        "c": "To represent a function that takes one argument and returns a result.",
+        "d": "To represent a function that takes no arguments and returns no result."
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is the purpose of the Consumer functional interface in Java 8?",
+      "options": {
+        "a": "To represent a function that takes two arguments and returns a result.",
+        "b": "To represent a function that takes no arguments and returns a result.",
+        "c": "To represent a function that takes one argument and returns a result.",
+        "d": "To represent a function that takes no arguments and returns no result."
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What is the purpose of the Predicate functional interface in Java 8?",
+      "options": {
+        "a": "To represent a function that takes two arguments and returns a result.",
+        "b": "To represent a function that takes no arguments and returns a result.",
+        "c": "To represent a function that takes one argument and returns a result.",
+        "d": "To represent a function that takes no arguments and returns a boolean result."
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What is the purpose of the Function functional interface in Java 8?",
+      "options": {
+        "a": "To represent a function that takes two arguments and returns a result.",
+        "b": "To represent a function that takes no arguments and returns a result.",
+        "c": "To represent a function that takes one argument and returns a result.",
+        "d": "To represent a function that takes no arguments and returns no result."
+      },
+      "answer": "c"
+    },
+    {
+      "question": "What is the purpose of the BiFunction functional interface in Java 8?",
+      "options": {
+        "a": "To represent a function that takes two arguments and returns a result.",
+        "b": "To represent a function that takes no arguments and returns a result.",
+        "c": "To represent a function that takes one argument and returns a result.",
+        "d": "To represent a function that takes no arguments and returns no result."
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What is the purpose of the UnaryOperator functional interface in Java 8?",
+      "options": {
+        "a": "To represent a function that takes two arguments and returns a result.",
+        "b": "To represent a function that takes no arguments and returns a result.",
+        "c": "To represent a function that takes one argument and returns a result of the same type.",
+        "d": "To represent a function that takes no arguments and returns no result."
+      },
+      "answer": "c"
+    },
+    {
+      "question": "What is the purpose of the BinaryOperator functional interface in Java 8?",
+      "options": {
+        "a": "To represent a function that takes two arguments and returns a result.",
+        "b": "To represent a function that takes no arguments and returns a result.",
+        "c": "To represent a function that takes one argument and returns a result.",
+        "d": "To represent a function that takes no arguments and returns no result."
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What is the purpose of the Collectors class in Java 8?",
+      "options": {
+        "a": "To perform input and output operations.",
+        "b": "To manipulate collections of data.",
+        "c": "To create and manage threads.",
+        "d": "To define complex synchronous operations."
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is the purpose of the forEach method in the Stream API in Java 8?",
+      "options": {
+        "a": "To perform input and output operations.",
+        "b": "To manipulate collections of data.",
+        "c": "To create and manage threads.",
+        "d": "To define complex synchronous operations."
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is the purpose of the map method in the Stream API in Java 8?",
+      "options": {
+        "a": "To perform input and output operations.",
+        "b": "To manipulate collections of data.",
+        "c": "To create and manage threads.",
+        "d": "To define complex synchronous operations."
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is the purpose of the filter method in the Stream API in Java 8?",
+      "options": {
+        "a": "To perform input and output operations.",
+        "b": "To manipulate collections of data.",
+        "c": "To create and manage threads.",
+        "d": "To define complex synchronous operations."
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is the purpose of the reduce method in the Stream API in Java 8?",
+      "options": {
+        "a": "To perform input and output operations.",
+        "b": "To manipulate collections of data.",
+        "c": "To create and manage threads.",
+        "d": "To define complex synchronous operations."
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is the purpose of the flatMap method in the Stream API in Java 8?",
+      "options": {
+        "a": "To perform input and output operations.",
+        "b": "To manipulate collections of data.",
+        "c": "To create and manage threads.",
+        "d": "To define complex synchronous operations."
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is the purpose of the sorted method in the Stream API in Java 8?",
+      "options": {
+        "a": "To perform input and output operations.",
+        "b": "To manipulate collections of data.",
+        "c": "To create and manage threads.",
+        "d": "To define complex synchronous operations."
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is the purpose of the distinct method in the Stream API in Java 8?",
+      "options": {
+        "a": "To perform input and output operations.",
+        "b": "To manipulate collections of data.",
+        "c": "To create and manage threads.",
+        "d": "To define complex synchronous operations."
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is the purpose of the limit method in the Stream API in Java 8?",
+      "options": {
+        "a": "To perform input and output operations.",
+        "b": "To manipulate collections of data.",
+        "c": "To create and manage threads.",
+        "d": "To define complex synchronous operations."
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is the purpose of the skip method in the Stream API in Java 8?",
+      "options": {
+        "a": "To perform input and output operations.",
+        "b": "To manipulate collections of data.",
+        "c": "To create and manage threads.",
+        "d": "To define complex synchronous operations."
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is the purpose of the anyMatch method in the Stream API in Java 8?",
+      "options": {
+        "a": "To perform input and output operations.",
+        "b": "To manipulate collections of data.",
+        "c": "To create and manage threads.",
+        "d": "To check if any element of the stream matches a given predicate."
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What is the purpose of the allMatch method in the Stream API in Java 8?",
+      "options": {
+        "a": "To perform input and output operations.",
+        "b": "To manipulate collections of data.",
+        "c": "To create and manage threads.",
+        "d": "To check if all elements of the stream match a given predicate."
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What is the purpose of the noneMatch method in the Stream API in Java 8?",
+      "options": {
+        "a": "To perform input and output operations.",
+        "b": "To manipulate collections of data.",
+        "c": "To create and manage threads.",
+        "d": "To check if no element of the stream matches a given predicate."
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What is the purpose of the findFirst method in the Stream API in Java 8?",
+      "options": {
+        "a": "To perform input and output operations.",
+        "b": "To manipulate collections of data.",
+        "c": "To create and manage threads.",
+        "d": "To find the first element of the stream."
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What is the purpose of the findAny method in the Stream API in Java 8?",
+      "options": {
+        "a": "To perform input and output operations.",
+        "b": "To manipulate collections of data.",
+        "c": "To create and manage threads.",
+        "d": "To find any element of the stream."
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What is the purpose of the toArray method in the Stream API in Java 8?",
+      "options": {
+        "a": "To perform input and output operations.",
+        "b": "To convert a stream into an array.",
+        "c": "To create and manage threads.",
+        "d": "To define complex synchronous operations."
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is the purpose of the min method in the Stream API in Java 8?",
+      "options": {
+        "a": "To perform input and output operations.",
+        "b": "To find the minimum element of the stream.",
+        "c": "To create and manage threads.",
+        "d": "To define complex synchronous operations."
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is the purpose of the max method in the Stream API in Java 8?",
+      "options": {
+        "a": "To perform input and output operations.",
+        "b": "To find the maximum element of the stream.",
+        "c": "To create and manage threads.",
+        "d": "To define complex synchronous operations."
+      },
+      "answer": "b"
+    }
+  ]
+}
+
+Quiz Results
+You scored 24 out of 32.
+
+Analysis of your result is below
+Question: What is the purpose of the Consumer functional interface in Java 8?
+
+Response: To represent a function that takes one argument and returns a result.
+
+Answer: To represent a function that takes no arguments and returns no result.
+
+
+Question: What is the purpose of the Predicate functional interface in Java 8?
+
+Response: To represent a function that takes one argument and returns a result.
+
+Answer: To represent a function that takes no arguments and returns a boolean result.
+
+
+Question: What is the purpose of the distinct method in the Stream API in Java 8?
+
+Response: To perform input and output operations.
+
+Answer: To manipulate collections of data.
+
+
+Question: What is the purpose of the anyMatch method in the Stream API in Java 8?
+
+Response: To manipulate collections of data.
+
+Answer: To check if any element of the stream matches a given predicate.
+
+
+Question: What is the purpose of the allMatch method in the Stream API in Java 8?
+
+Response: To manipulate collections of data.
+
+Answer: To check if all elements of the stream match a given predicate.
+
+
+Question: What is the purpose of the noneMatch method in the Stream API in Java 8?
+
+Response: To manipulate collections of data.
+
+Answer: To check if no element of the stream matches a given predicate.
+
+
+Question: What is the purpose of the findFirst method in the Stream API in Java 8?
+
+Response: To manipulate collections of data.
+
+Answer: To find the first element of the stream.
+
+
+Question: What is the purpose of the findAny method in the Stream API in Java 8?
+
+Response: To manipulate collections of data.
+
+Answer: To find any element of the stream.

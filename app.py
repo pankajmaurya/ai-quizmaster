@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from constants import num_items_in_quiz
 from getquiz import get_new_quiz
 
 app = Flask(__name__)
@@ -44,7 +45,7 @@ def quiz():
                 analysis_list.append({"question" : questions[i]['question'] , 
                                       "response" : get_choice(questions, i, selected_choice), 
                                       "answer": get_choice(questions, i, questions[i]['answer'])}) 
-        if score == 10:
+        if score == num_items_in_quiz:
             verdict = "Well Done, Keep Learning Still !"
         return render_template('result.html', verdict=verdict, score=score, analysis_list=analysis_list, total=len(questions))
 
