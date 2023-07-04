@@ -6,5 +6,12 @@
 <body>
     <h1>Quiz Results</h1>
     <p>You scored {{ score }} out of {{ total }}.</p>
+    <h2>Analysis of your result is below</h2>
+    {% for analysis in analysis_list %}
+    <p> <i>Question:</i> {{ analysis.question }} </p>
+    <p> <i>Response:</i> {{ analysis.response }} </p>
+    <p> <i>Answer:</i> {{ analysis.answer }} </p>
+    <br>
+    {% endfor %}
 </body>
 </html>

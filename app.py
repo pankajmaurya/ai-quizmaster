@@ -22,12 +22,19 @@ def quiz():
     if request.method == 'POST':
         # Process submitted answer
         score = 0
+        analysis_list = []
         for i in range(len(questions)):
             selected_choice = request.form.get(str(i))
             if selected_choice is not None and selected_choice == questions[i]['answer']:
                 score += 1
-        return render_template('result.html', score=score, total=len(questions))
+            else:
+                analysis_list.append({"question" : questions[i]['question'] , "response" : get_choice(i, selected_choice), "answer": get_choice(i, questions[i]['answer'])}) 
+        return render_template('result.html', score=score, analysis_list=analysis_list, total=len(questions))
     return render_template('quiz.html', questions=questions)
+
+
+def get_choice(i, op):
+    return questions[i]['options'][op]
 
 if __name__ == '__main__':
     app.run(debug=True)
